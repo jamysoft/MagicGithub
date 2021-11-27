@@ -22,7 +22,8 @@ import static com.openclassrooms.magicgithub.utils.RecyclerViewUtils.clickChildV
  */
 @RunWith(AndroidJUnit4.class)
 @LargeTest
-public class UserListInstrumentedTest {
+public class UserListInstrumentedTest
+{
 
     @Rule
     public IntentsTestRule<ListUserActivity> mActivityRule = new IntentsTestRule<>(ListUserActivity.class);

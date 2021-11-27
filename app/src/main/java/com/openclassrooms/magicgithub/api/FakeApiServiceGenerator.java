@@ -10,10 +10,11 @@ import java.util.UUID;
 public abstract class FakeApiServiceGenerator {
 
 
-    static List<User> generateUsers() {
+    static List<User> generateUsers()
+    {
         return new ArrayList<>(FAKE_USERS);
     }
-
+// //créer une liste apatir d'un tableau
     public static List<User> FAKE_USERS = Arrays.asList(
             new User("001", "Jake", "https://api.adorable.io/AVATARS/512/1.png"),
             new User("002", "Paul", "https://api.adorable.io/AVATARS/512/2.png"),

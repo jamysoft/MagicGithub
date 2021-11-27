@@ -23,7 +23,7 @@ import static org.hamcrest.collection.IsIterableContainingInAnyOrder.containsInA
  */
 @RunWith(JUnit4.class)
 public class UserRepositoryTest {
-    
+
     private UserRepository userRepository;
     
     @Before
@@ -32,8 +32,9 @@ public class UserRepositoryTest {
     }
     
     @Test
-    public void getUsersWithSuccess() {
-        List<User> usersActual = userRepository.getUsers();
+    public void getUsersWithSuccess()
+    {
+        List<User> usersActual = this.userRepository.getUsers();
         List<User> usersExpected = FAKE_USERS;
         assertThat(usersActual, containsInAnyOrder(usersExpected.toArray()));
     }
